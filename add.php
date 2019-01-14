@@ -15,8 +15,8 @@
 				<input type="text" name="website" id="website">
 			</div>
 			<div class="col">
-				<label for="DR">DR:</label>
-				<input type="text" name="DR" id="DR">
+				<label for="DA">DA:</label>
+				<input type="text" name="DA" id="DA">
 			</div>
 			<div class="col">
 				<label for="names">Names:</label>

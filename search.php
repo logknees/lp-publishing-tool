@@ -12,7 +12,7 @@ $clause = 'LIKE';
 $mod = '%';
 
 //switch out the "LIKE" SQL clause for = for certain requests, also switch out modulus
-if($searchField == 'DR'){
+if($searchField == 'DA'){
 	$clause = '=';
 	$mod = '';
 }
