@@ -17,7 +17,7 @@
 				<select id="searchBy">
 					<option id="search_name" name="search_name" value="names">Name(s)</option>
 					<option id="search_website" name="search_website" value="website">Website Name</option>
-					<option id="search_DR" name="search_DR" value="DR">Domain Rating</option>
+					<option id="search_DA" name="search_DA" value="DA">Domain Rating</option>
 				</select>
 			</div>
 			<div class="col">
