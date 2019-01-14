@@ -33,7 +33,7 @@
 				<select id="sortData">
 					<option id="sort_name" name="sort_name" value="names">Name(s)</option>
 					<option id="sort_website" name="sort_website" value="website">Website Name</option>
-					<option id="DR" name="DR" value="DR">Domain Rating</option>
+					<option id="sort_DA" name="sort_DA" value="DA">Domain Rating</option>
 				</select>
 			</div>
 			<div class="col">
