@@ -53,7 +53,7 @@
 	</div>
 	<div class="loader"></div>
 
-	<div class="fixed-bottom">
+	<div class="footer fixed-bottom">
 		<div class="row">
 			<div class="col">
 				test
