@@ -14,3 +14,21 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+input {
+  width: 90%;
+}
+
+input[type="text"]{
+  font-size: 10pt;
+}
+
+.lp-footer{
+  background: green;
+  z-index: 100;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  opacity: .9;
+  font-size: 10pt;
+}
