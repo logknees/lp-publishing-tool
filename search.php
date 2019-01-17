@@ -3,11 +3,17 @@
 include 'connection.php';
 include 'utf8ize.php';
 
-$searchField = $_POST['searchField'];
-$searchData = $_POST['searchData'];
-$sortData = $_POST['sortData'];
-$sortOrder = $_POST['sortOrder'];
+$JSON = $_POST['send_object'];
+$JSON = json_decode($JSON,true);
 
+$website = $JSON["website"];
+$names = $JSON["names"];
+$email = $JSON["email"];
+$phone = $JSON["phone"];
+
+$mysqli = $con->prepare("SELECT * FROM sites WHERE website LIKE '%$website%' AND names LIKE '%$names%' AND email LIKE '%$email%' AND phone LIKE '%$phone%';");
+
+/*
 $clause = 'LIKE';
 $mod = '%';
 
@@ -19,6 +25,7 @@ if($searchField == 'DA'){
 
 
 $mysqli = $con->prepare("SELECT * FROM sites WHERE ".$searchField." ".$clause." '".$mod."".$searchData."".$mod."' ORDER BY ".$sortData." ".$sortOrder." ");
+*/
 $mysqli->execute();
 $array = array();
 $result = $mysqli->get_result();

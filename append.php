@@ -4,13 +4,24 @@
 	function append(data){
 		var table = ""
 		data.forEach(function(currentRow){
-			table += "<tr>";
 			for (var key in currentRow){
 				if(key == "website_id"){
-
+					table += "<tr id='website_id_"+currentRow[key]+"'>";
 				}
 				else if(key =="active"){
 					
+				}
+				else if(key == "last_poc"){
+					table += "<td>";
+					table += currentRow[key];
+					table += "</td>";
+				}
+				else if(key == "signed"){
+					table += "<td>";
+					if(currentRow[key] == 1){
+						table += "&#10004;"
+					}
+					table += "</td>";
 				}
 				else{
 					table += "<td>";

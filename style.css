@@ -22,6 +22,9 @@ input {
 input[type="text"]{
   font-size: 10pt;
 }
+input[type="date"]{
+  font-size: 8pt;
+}
 
 .lp-footer{
   background: green;
@@ -31,4 +34,12 @@ input[type="text"]{
   color: white;
   opacity: .9;
   font-size: 10pt;
+}
+
+.table{
+  font-size: 10pt;
+}
+
+.table th{
+  width: 8%;
 }
