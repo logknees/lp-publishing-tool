@@ -32,11 +32,11 @@ $(document).ready(function(){
 			type: "POST",
 			url: 'add.php',
 			data: {
-				add_submit_obj: JSON.stringify(add_submit_obj)
+				add_submit_obj: JSON.stringify(add_submit_obj).removeQuotes()
 			},
 			success: function(data)
 			{
-			    console.log(JSON.parse(data));
+			    console.log(data);
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {
 			    alert(errorThrown);
@@ -44,4 +44,7 @@ $(document).ready(function(){
 		});
 	});
 });
+String.prototype.removeQuotes = function() {
+    return this.replace(/'/g, "");
+};
 </script>
