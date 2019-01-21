@@ -2,9 +2,11 @@
 <html lang="en">
 <?php include "header.php"; ?>
 <?php include "addBinding.php"; ?>
+<?php include "inputFilter.php" ?>
 
 </head>
 <body>
+	<div id="currentlyEditing" value="false"></div>
 	<?php include "nav.php"; ?>
 	
 	<div id="results">
@@ -97,3 +99,4 @@
 </html>
 
 <?php include "submitBinding.php"; ?>
+<?php include "editBinding.php"; ?>

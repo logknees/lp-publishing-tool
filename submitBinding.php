@@ -31,8 +31,6 @@ $(document).ready(function(){
 		}
 	});
 });
-String.prototype.removeQuotes = function() {
-    return this.replace(/'/g, "");
-};
+<?php include 'removeQuotes.php' ?>
 
 </script>

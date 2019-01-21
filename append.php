@@ -2,11 +2,11 @@
 <script>
 	createTable();
 	function append(data){
-		var table = ""
+		var table = "";
 		data.forEach(function(currentRow){
 			for (var key in currentRow){
 				if(key == "website_id"){
-					table += "<tr id='website_id_"+currentRow[key]+"'>";
+					table += "<tr class='locked' id='website_id_"+currentRow[key]+"'>";
 				}
 				else if(key =="active"){
 					

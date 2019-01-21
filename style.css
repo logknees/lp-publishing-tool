@@ -42,4 +42,17 @@ input[type="date"]{
 
 .table th{
   width: 8%;
+  max-width: 8%;
+}
+
+.editable{
+  background-color: #ffc107;
+  max-width: 8%;
+  overflow-x: scroll;
+}
+
+#editingButtons {
+  position: absolute;
+  right: 50;
+  display: none;
 }

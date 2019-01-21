@@ -13,4 +13,8 @@
       <a class="nav-link" href="#">Link 3</a>
     </li>-->
   </ul>
+  <div id="editingButtons">
+    <button type="button" id="editSubmit" class="btn btn-warning">Finish Editing</button>
+    <button type="button" id="editCancel" class="btn btn-danger">Cancel Changes</button>
+  </div>
 </nav>
