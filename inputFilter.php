@@ -1,3 +1,4 @@
+<script>
 // Restricts input for each element in the set of matched elements to the given inputFilter.
 (function($) {
   $.fn.inputFilter = function(inputFilter) {
@@ -13,3 +14,8 @@
     });
   };
 }(jQuery));
+
+
+
+
+</script>
