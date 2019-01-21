@@ -16,10 +16,10 @@ $(document).ready(function(){
 		$('#add_fields').find('div').each(function(){
 			if($(this).find(":first-child").attr('type') == 'checkbox'){
 				if($(this).find(":first-child:checked").length > 0){
-					add_submit_obj["signed"] = 1;
+					add_submit_obj["is_signed"] = 1;
 				}
 				else{
-					add_submit_obj["signed"] = 0;
+					add_submit_obj["is_signed"] = 0;
 				}
 			}
 			else{

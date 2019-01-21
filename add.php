@@ -11,7 +11,7 @@ $values = array();
 
 foreach($JSON as $key => $value){
 	$keys[] = $key;
-	if($key == "DA" || $key == "times_contacted" || $key == "active" || $key == "signed" || $key == "publishing_coordinator"){
+	if($key == "DA" || $key == "times_contacted" || $key == "active" || $key == "is_signed" || $key == "publishing_coordinator"){
 		if($value == ''){
 			$values[] = 0;
 		}
@@ -24,7 +24,7 @@ foreach($JSON as $key => $value){
 			$values[] = "null";
 		}
 		else{
-			$values[] = $value;
+			$values[] = "'" . $value . "'";
 		}
 	}
 	else{

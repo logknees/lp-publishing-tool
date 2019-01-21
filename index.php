@@ -6,13 +6,7 @@
 </head>
 <body>
 	<?php include "nav.php"; ?>
-
-	<div class="container">
-		<h1 class="display-1">Publishing Tool</h1>
-		<div class="row">
-			&nbsp;
-		</div>
-	</div>
+	
 	<div id="results">
 
 
@@ -27,7 +21,7 @@
 				<div class="col"><label for="title">Titles</label></div>
 				<div class="col"><label for="email">Email</label></div>
 				<div class="col"><label for="phone">Phone</label></div>
-				<div class="col"><label for="status">Status</label></div>
+				<div class="col"><label for="site_status">Status</label></div>
 				<div class="col"><label for="last_poc">Last POC</label></div>
 				<div class="col"><label for="times_contacted">Times Contacted</label></div>
 
@@ -43,12 +37,12 @@
 				<div class="col"><input type="text" class="form-control" name="title"></div>
 				<div class="col"><input type="text" class="form-control" name="email" id="email"></div>
 				<div class="col"><input type="text" class="form-control" name="phone" id="phone"></div>
-				<div class="col"><input type="text" class="form-control" name="status"></div>
+				<div class="col"><input type="text" class="form-control" name="site_status"></div>
 				<div class="col"><input type="date" class="form-control" name="last_poc"></div>
 				<div class="col"><input type="text" class="form-control" name="times_contacted"></div>
 				<div class="col"><input type="text" class="form-control" name="notes"></div>
 				<div class="col" style="display: none;"><input type="text" value="1" name="active"></div>
-				<div class="col"><input type="checkbox" class="form-control" name="signed"></div>
+				<div class="col"><input type="checkbox" class="form-control" name="is_signed"></div>
 				<div class="col">
 					<select class="form-control" name="publishing_coordinator">
 						<option value="1">Emmy</option>
