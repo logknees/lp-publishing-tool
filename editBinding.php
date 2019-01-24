@@ -12,7 +12,7 @@ $(document).ready(function(){
 		}
 	});
 	$('#editSubmit').click(function(){
-		editSubmit();
+		//editSubmit();
 		closeEditing();
 	});
 	$('#editCancel').click(function(){
