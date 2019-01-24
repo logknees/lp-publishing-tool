@@ -1,8 +1,9 @@
 <?php include "connection.php"; ?>
 <html lang="en">
 <?php include "header.php"; ?>
-<?php include "addBinding.php"; ?>
-<?php include "inputFilter.php" ?>
+
+<?php include "inputFilter.php"; ?>
+<?php include "removeQuotes.php"; ?>
 
 </head>
 <body>
@@ -34,14 +35,14 @@
 			</div>
 			<div class="row" id="add_fields">
 				<div class="col"><input type="text" class="form-control" name="website" id="website"></div>
-				<div class="col"><input type="text" class="form-control" name="DA"></div>
+				<div class="col"><input type="text" class="form-control inputFilter" name="DA"></div>
 				<div class="col"><input type="text" class="form-control" name="names" id="names"></div>
 				<div class="col"><input type="text" class="form-control" name="title"></div>
 				<div class="col"><input type="text" class="form-control" name="email" id="email"></div>
 				<div class="col"><input type="text" class="form-control" name="phone" id="phone"></div>
 				<div class="col"><input type="text" class="form-control" name="site_status"></div>
 				<div class="col"><input type="date" class="form-control" name="last_poc"></div>
-				<div class="col"><input type="text" class="form-control" name="times_contacted"></div>
+				<div class="col"><input type="text" class="form-control inputFilter" name="times_contacted"></div>
 				<div class="col"><input type="text" class="form-control" name="notes"></div>
 				<div class="col" style="display: none;"><input type="text" value="1" name="active"></div>
 				<div class="col"><input type="checkbox" class="form-control" name="is_signed"></div>
@@ -98,5 +99,7 @@
 
 </html>
 
-<?php include "submitBinding.php"; ?>
+<?php include "addBinding.php"; ?>
 <?php include "editBinding.php"; ?>
+<?php include "searchBinding.php"; ?>
+

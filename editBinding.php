@@ -12,7 +12,16 @@ $(document).ready(function(){
 		}
 	});
 	$('#editSubmit').click(function(){
-		<?php include "closeEditing.php" ?>
+		editSubmit();
+		closeEditing();
+	});
+	$('#editCancel').click(function(){
+		searchSubmit(); //not ideal
+		closeEditing();
 	});
 });
+
 </script>
+
+<?php include "editSubmit.php" ?>
+<?php include "closeEditing.php" ?>

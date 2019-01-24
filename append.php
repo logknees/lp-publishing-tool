@@ -23,6 +23,16 @@
 					}
 					table += "</td>";
 				}
+				else if(key == "DA"){
+					table += "<td class='editableFilter'>";
+					table += currentRow[key];
+					table += "</td>";
+				}
+				else if(key == "times_contacted"){
+					table += "<td class='editableFilter'>";
+					table += currentRow[key];
+					table += "</td>";
+				}
 				else{
 					table += "<td>";
 					table += currentRow[key];
