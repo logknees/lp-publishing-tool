@@ -10,8 +10,10 @@ $website = $JSON["website"];
 $names = $JSON["names"];
 $email = $JSON["email"];
 $phone = $JSON["phone"];
+$order = $JSON["order"];
+$direction = $JSON["direction"];
 
-$mysqli = $con->prepare("SELECT * FROM sites WHERE website LIKE '%$website%' AND names LIKE '%$names%' AND email LIKE '%$email%' AND phone LIKE '%$phone%';");
+$mysqli = $con->prepare("SELECT * FROM sites a LEFT JOIN publishing_coordinator AS b ON a.publishing_coordinator = b.pc_id WHERE a.website LIKE '%$website%' AND a.names LIKE '%$names%' AND a.email LIKE '%$email%' AND a.phone LIKE '%$phone%' ORDER BY $order $direction");
 
 $mysqli->execute();
 $array = array();

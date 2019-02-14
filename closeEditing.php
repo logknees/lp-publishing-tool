@@ -9,5 +9,6 @@
 			});
 		});
 		$('#editingButtons').hide();
+		$('#footer').show();
 	}
 </script>

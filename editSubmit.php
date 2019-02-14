@@ -1,25 +1,40 @@
 <script>
-var add_submit_obj = {};
-		$('#add_fields').find('div').each(function(){
-			if($(this).find(":first-child").attr('type') == 'checkbox'){
-				if($(this).find(":first-child:checked").length > 0){
-					add_submit_obj["is_signed"] = 1;
-				}
-				else{
-					add_submit_obj["is_signed"] = 0;
-				}
+	function editSubmit(){
+		var id = $('.editable').attr('id');
+		id = id.split("website_id_")[1];
+		var edit_submit_obj = {};
+		var key, value;
+		$('.editable').find("td").each(function(){
+			if($(this).hasClass("dateEdit")){
+				key = $(this).data('submission');
+				value = $(this).find("input").val();
+				edit_submit_obj[key] = value;
+			}
+			else if($(this).hasClass("signedEdit")){
+				key = $(this).data('submission');
+				value = $(this).find("select").val();
+				edit_submit_obj[key] = value;
+			}
+			else if($(this).hasClass("pcEdit")){
+				key = $(this).data('submission');
+				value = $(this).find("select").val();
+				edit_submit_obj[key] = value;
+			}
+			else if($(this).hasClass("nonEditable")){
+
 			}
 			else{
-				var name = $(this).find(":first-child").attr("name");
-				var val = $(this).find(":first-child").val();
-				add_submit_obj[name] = val;
+				key = $(this).data('submission');
+				value = $(this).text();
+				edit_submit_obj[key] = value;
 			}
 		});
+		edit_submit_obj['active'] =  1;
 		$.ajax({
 			type: "POST",
-			url: 'add.php',
+			url: 'edit.php',
 			data: {
-				add_submit_obj: JSON.stringify(add_submit_obj).removeQuotes()
+				id: id, edit_submit_obj: JSON.stringify(edit_submit_obj).removeQuotes()
 			},
 			success: function(data)
 			{
@@ -29,4 +44,5 @@ var add_submit_obj = {};
 			    alert(errorThrown);
 			}
 		});
+	}
 </script>

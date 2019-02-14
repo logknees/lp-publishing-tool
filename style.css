@@ -56,3 +56,11 @@ input[type="date"]{
   right: 50;
   display: none;
 }
+
+.sorted_asc::after{
+  content: " ▲";
+}
+
+.sorted_desc::after{
+  content: " ▼";
+}

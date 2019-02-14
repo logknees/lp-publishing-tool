@@ -1,5 +1,6 @@
 <?php include "connection.php"; ?>
 <html lang="en">
+<script src="https://rawgit.com/moment/moment/2.24.0/min/moment.min.js"></script>
 <?php include "header.php"; ?>
 
 <?php include "inputFilter.php"; ?>
@@ -11,8 +12,26 @@
 	<?php include "nav.php"; ?>
 	
 	<div id="results">
-
-
+		<table class="table" id="table_results">
+			<thead>
+				<tr>
+					<th scope="col" style="display: none" class="table_website_id"></th>
+					<th scope="col" class="table_website sorted_asc">Website</th>
+					<th scope="col" class="table_DA">DA</th>
+					<th scope="col" class="table_names">Names</th>
+					<th scope="col" class="table_title">Title</th>
+					<th scope="col" class="table_email">Email</th>
+					<th scope="col" class="table_phone">Phone</th>
+					<th scope="col" class="table_status">Status</th>
+					<th scope="col" class="table_last_poc">Last POC</th>
+					<th scope="col" class="table_created_on">Created On</th>
+					<th scope="col" class="table_notes">Notes</th>
+					<th scope="col" class="table_is_signed">Signed?</th>
+					<th scope="col" class="table_publishing_coordinator">Publishing Coordinator</th>
+				</tr>
+			</thead>
+			<tbody id="data"></tbody>
+		</table>
 	</div>
 	<div class="loader"></div>
 	<div class="container">
@@ -26,8 +45,7 @@
 				<div class="col"><label for="phone">Phone</label></div>
 				<div class="col"><label for="site_status">Status</label></div>
 				<div class="col"><label for="last_poc">Last POC</label></div>
-				<div class="col"><label for="times_contacted">Times Contacted</label></div>
-
+				<div class="col"><label>&nbsp;</label></div>
 				<div class="col"><label for="notes">Notes</label></div>
 				<div class="col"><label for="signed">Signed?</label></div>
 				<div class="col"><label for="publishing_coordinator">Coordinator</label>
@@ -42,7 +60,7 @@
 				<div class="col"><input type="text" class="form-control" name="phone" id="phone"></div>
 				<div class="col"><input type="text" class="form-control" name="site_status"></div>
 				<div class="col"><input type="date" class="form-control" name="last_poc"></div>
-				<div class="col"><input type="text" class="form-control inputFilter" name="times_contacted"></div>
+				<div class="col">&nbsp;</div>
 				<div class="col"><input type="text" class="form-control" name="notes"></div>
 				<div class="col" style="display: none;"><input type="text" value="1" name="active"></div>
 				<div class="col"><input type="checkbox" class="form-control" name="is_signed"></div>
@@ -102,4 +120,5 @@
 <?php include "addBinding.php"; ?>
 <?php include "editBinding.php"; ?>
 <?php include "searchBinding.php"; ?>
+<?php include "orderBinding.php"; ?>
 
