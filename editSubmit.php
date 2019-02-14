@@ -38,6 +38,7 @@
 			},
 			success: function(data)
 			{
+				console.log(data);
 			    searchSubmit();
 				closeEditing();
 			},
