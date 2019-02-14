@@ -47,9 +47,7 @@ $(document).ready(function(){
 		}
 	});
 	$('#editSubmit').click(function(){
-		editSubmit();
-		searchSubmit(); //not ideal
-		closeEditing();
+		editSubmit(); //calls searchSubmit and closeEditing within the callback for the ajax call
 	});
 	$('#editCancel').click(function(){
 		searchSubmit(); //not ideal

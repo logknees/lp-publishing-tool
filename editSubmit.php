@@ -38,7 +38,8 @@
 			},
 			success: function(data)
 			{
-			    console.log(data);
+			    searchSubmit();
+				closeEditing();
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {
 			    alert(errorThrown);
