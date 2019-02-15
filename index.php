@@ -22,7 +22,7 @@
 					<th scope="col" class="table_title">Title</th>
 					<th scope="col" class="table_email">Email</th>
 					<th scope="col" class="table_phone">Phone</th>
-					<th scope="col" class="table_status">Status</th>
+					<th scope="col" class="table_site_status">Status</th>
 					<th scope="col" class="table_last_poc">Last POC</th>
 					<th scope="col" class="table_created_on">Created On</th>
 					<th scope="col" class="table_notes">Notes</th>
