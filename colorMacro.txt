@@ -1,0 +1,13 @@
+Sub Main
+  Dim document As Object
+  Dim sheet As Object
+  document = ThisComponent
+  sheet = document.Sheets(0)
+ 
+  Dim cell As Object 
+  Dim rowIndex As Integer
+  For rowIndex = 0 To 1729
+    cell = sheet.getCellByPosition(9, rowindex)
+    cell.Value = cell.CellBackColor
+  Next rowIndex
+End Sub

@@ -1,0 +1,26 @@
+  _                 _           _   _____          _ _   _             
+ | |               (_)         | | |  __ \        (_) | (_)            
+ | |     ___   __ _ _  ___ __ _| | | |__) |__  ___ _| |_ _  ___  _ __  
+ | |    / _ \ / _` | |/ __/ _` | | |  ___/ _ \/ __| | __| |/ _ \| '_ \ 
+ | |___| (_) | (_| | | (_| (_| | | | |  | (_) \__ \ | |_| | (_) | | | |
+ |______\___/ \__, |_|\___\__,_|_| |_|   \___/|___/_|\__|_|\___/|_| |_|
+               __/ |                                                   
+  _____       |___/ _ _     _     _               _______          _   
+ |  __ \     | |   | (_)   | |   (_)             |__   __|        | |  
+ | |__) |   _| |__ | |_ ___| |__  _ _ __   __ _     | | ___   ___ | |  
+ |  ___/ | | | '_ \| | / __| '_ \| | '_ \ / _` |    | |/ _ \ / _ \| |  
+ | |   | |_| | |_) | | \__ \ | | | | | | | (_| |    | | (_) | (_) | |  
+ |_|    \__,_|_.__/|_|_|___/_| |_|_|_| |_|\__, |    |_|\___/ \___/|_|  
+                                           __/ |                       
+                                          |___/                        
+Developed by Logan Voss
+
+Welcome to the publishing tool!
+
+In order to start searching for an already-contacted publisher, start typing in one of the text boxes in green row at the bottom of the webpage.
+
+To log a new entry, hit enter while focused on one of the text boxes in the green row, and hit "Submit!" on the popup that comes up.
+
+To edit an existing entry, double click the row, which will disable searching. You will have to either cancel the editing or Finish the editing, as shown in the buttons at the top right corner of the screen.
+
+
