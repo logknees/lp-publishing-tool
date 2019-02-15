@@ -8,6 +8,9 @@
 			if($(this).hasClass("dateEdit")){
 				key = $(this).data('submission');
 				value = $(this).find("input").val();
+				if(value == ''){
+					value = "0000-00-00";
+				}
 				edit_submit_obj[key] = value;
 			}
 			else if($(this).hasClass("signedEdit")){
