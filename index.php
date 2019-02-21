@@ -121,4 +121,5 @@
 <?php include "editBinding.php"; ?>
 <?php include "searchBinding.php"; ?>
 <?php include "orderBinding.php"; ?>
+<?php include "pasteBinding.php"; ?>
 
