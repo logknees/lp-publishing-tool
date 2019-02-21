@@ -49,6 +49,9 @@ $(document).ready(function(){
 	$('#editSubmit').click(function(){
 		editSubmit(); //calls searchSubmit and closeEditing within the callback for the ajax call
 	});
+	$('#editDelete').click(function(){
+		editDelete(); 
+	});
 	$('#editCancel').click(function(){
 		searchSubmit(); //not ideal
 		closeEditing();
@@ -58,4 +61,5 @@ $(document).ready(function(){
 </script>
 
 <?php include "editSubmit.php" ?>
+<?php include "editDelete.php" ?>
 <?php include "closeEditing.php" ?>

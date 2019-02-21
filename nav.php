@@ -15,6 +15,7 @@
   </ul>
   <div id="editingButtons">
     <button type="button" id="editSubmit" class="btn btn-warning">Finish Editing</button>
-    <button type="button" id="editCancel" class="btn btn-danger">Cancel Changes</button>
+    <button type="button" id="editDelete" class="btn btn-danger">Delete Row</button>
+    <button type="button" id="editCancel" class="btn btn-secondary">Cancel Changes</button>
   </div>
 </nav>

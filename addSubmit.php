@@ -24,7 +24,7 @@
 			},
 			success: function(data)
 			{
-			    console.log(data);
+			    searchSubmit();
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {
 			    alert(errorThrown);
