@@ -43,9 +43,10 @@
 			{
 			    searchSubmit();
 				closeEditing();
+				toastr.success("Editing successful.");
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {
-			    alert(errorThrown);
+			    toastr.error(errorThrown);
 			}
 		});
 	}

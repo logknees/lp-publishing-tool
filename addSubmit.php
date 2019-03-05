@@ -25,9 +25,10 @@
 			success: function(data)
 			{
 			    searchSubmit();
+			    toastr.success("Row added!");
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {
-			    alert(errorThrown);
+				toastr.error(errorThrown)
 			}
 		});
 	}

@@ -29,7 +29,8 @@ function searchSubmit(){
 				    $('.loader').toggle();
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
-				    alert(errorThrown);
+				    toastr.error(errorThrown);
+				    $('.loader').toggle();
 				}
 			});
 		}

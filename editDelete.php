@@ -14,9 +14,10 @@
 				{
 				    searchSubmit();
 					closeEditing();
+					toastr.success("Row Deleted.");
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
-				    alert(errorThrown);
+				    toastr.error(errorThrown);
 				}
 			});
 		});
