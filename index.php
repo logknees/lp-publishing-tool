@@ -144,4 +144,5 @@
 <?php include "searchBinding.php"; ?>
 <?php include "orderBinding.php"; ?>
 <?php include "pasteBinding.php"; ?>
+<?php include "clearBinding.php"; ?>
 
