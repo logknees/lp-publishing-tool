@@ -27,7 +27,7 @@ $(document).ready(function(){
 				else if($(this).hasClass("pcEdit")){
 					var pc = $(this).data("value");
 					var string = "<select>";
-					for(var i = 0; i < 4; i++){
+					for(var i = 0; i < 5; i++){
 						if(pc == i){
 							string += "<option selected value='"+i+"'>"+pc_array[i]+"</option>";
 						}
