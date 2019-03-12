@@ -2,12 +2,16 @@
 $(document).ready(function(){
 	$('#footer').keydown(function (e){
 		if(e.keyCode == 13){
-			var total_chars = ($("#website").val().length) +  ($("#names").val().length) +  ($("#email").val().length) +  ($("#phone").val().length);
-			if(total_chars > 2){
-				$('#confirmModal').modal('show');
+			if(e.keyCode == 13 && e.shiftKey){
 			}
 			else{
-				$('#invalidModal').modal('show');
+				var total_chars = ($("#website").val().length) +  ($("#names").val().length) +  ($("#email").val().length) +  ($("#phone").val().length);
+				if(total_chars > 2){
+					$('#confirmModal').modal('show');
+				}
+				else{
+					$('#invalidModal').modal('show');
+				}
 			}
 		}
 	});

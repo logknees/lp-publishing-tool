@@ -28,8 +28,9 @@
 			}
 			else{
 				key = $(this).data('submission');
-				value = $(this).text();
+				value = $(this).html();
 				edit_submit_obj[key] = value;
+				console.log(edit_submit_obj[key]);
 			}
 		});
 		edit_submit_obj['active'] =  1;

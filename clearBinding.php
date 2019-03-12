@@ -2,7 +2,20 @@
 $(document).ready(function(){
 	$('body').keydown(function (e){
 		if(e.keyCode == 27){
-			clearFooter();
+			if($('#deleteModal').is(":visible")){
+				$('#deleteModal').modal('hide');
+			}
+			else if($('#editingButtons').is(":visible")){
+				searchSubmit();
+				closeEditing();
+			}
+			else if($('#confirmModal').is(":visible")){
+				$('#confirmModal').modal('hide');
+			}
+			
+			else{
+				clearFooter();
+			}
 		}
 	});
 });
