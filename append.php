@@ -64,6 +64,7 @@
 			}
 			table += "</tr>";
 		});
+		table += "<tr>&nbsp;</tr><tr>&nbsp;</tr><tr>&nbsp;</tr><tr>&nbsp;</tr><tr>&nbsp;</tr>";
 		document.getElementById('data').innerHTML = table;
 	}
 

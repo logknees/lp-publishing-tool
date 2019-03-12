@@ -64,3 +64,4 @@ input[type="date"]{
 .sorted_desc::after{
   content: " ▼";
 }
+
