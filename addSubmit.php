@@ -10,6 +10,11 @@
 					add_submit_obj["is_signed"] = 0;
 				}
 			}
+			else if($(this).find(":first-child").attr('type') == 'date'){
+				if($(this).find(":first-child").val() == ""){
+					$(this).find(":first-child").val("0000-00-00");
+				}
+			}
 			else{
 				var name = $(this).find(":first-child").attr("name");
 				var val = $(this).find(":first-child").val();
