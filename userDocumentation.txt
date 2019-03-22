@@ -18,7 +18,9 @@ Developed by Logan Voss
 Welcome to the publishing tool!
 
 In order to start searching for an already-contacted publisher, start typing in one of the text boxes in green row at the bottom of the webpage.
-To clear this greenrow faster, try hitting ESC (escape)
+You can also filter by publishing coordinator by selecting a different coordinator (the default is 'all').
+
+To clear this green row faster, try hitting ESC (escape)
 
 
 To log a new entry, hit enter while focused on one of the text boxes in the green row, and hit "Submit!" on the popup that comes up.
