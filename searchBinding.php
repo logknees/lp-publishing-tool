@@ -12,6 +12,10 @@ $(document).ready(function(){
 			searchSubmit();
 		}
 	});
+
+	$("#publishing_coordinator").on("change", function(){
+		searchSubmit();
+	});
 });
 
 </script>

@@ -67,7 +67,8 @@
 				<div class="col" style="display: none;"><input type="text" value="1" name="active"></div>
 				<div class="col"><input type="checkbox" class="form-control" name="is_signed"></div>
 				<div class="col">
-					<select class="form-control" name="publishing_coordinator">
+					<select class="form-control" name="publishing_coordinator" id="publishing_coordinator">
+						<option value="0">All</option>
 						<option value="1">Emmy</option>
 						<option value="2">Mallory</option>
 						<option value="3">Morgan</option>

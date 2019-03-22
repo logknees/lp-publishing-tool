@@ -16,7 +16,7 @@ function searchSubmit(){
 			$('.loader').toggle();
 			var website = $("#website").val();
 			//build js object from form values
-			var send_object = { website: $("#website").val(), names: $("#names").val(), email: $("#email").val(), phone: $("#phone").val(), order: order, direction: direction };
+			var send_object = { website: $("#website").val(), names: $("#names").val(), email: $("#email").val(), phone: $("#phone").val(), pc: $("#publishing_coordinator").val(), order: order, direction: direction };
 			$.ajax({
 				type: "POST",
 				url: 'search.php',
