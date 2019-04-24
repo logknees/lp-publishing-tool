@@ -53,7 +53,7 @@ $(document).ready(function(){
 		editDelete(); 
 	});
 	$('#editCancel').click(function(){
-		searchSubmit(); //not ideal
+		searchSubmit(false); //not ideal
 		closeEditing();
 	});
 });

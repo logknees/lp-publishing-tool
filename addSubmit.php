@@ -29,7 +29,7 @@
 			},
 			success: function(data)
 			{
-			    searchSubmit();
+			    searchSubmit(false);
 			    toastr.success("Row added!");
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {

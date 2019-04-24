@@ -17,7 +17,7 @@ $('document').ready(function(){
 				});
 				$(this).addClass("sorted_asc");
 			}
-			searchSubmit();
+			searchSubmit(true);
 		}	
 	});
 });

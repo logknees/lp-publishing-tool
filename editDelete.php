@@ -12,7 +12,7 @@
 				},
 				success: function(data)
 				{
-				    searchSubmit();
+				    searchSubmit(false);
 					closeEditing();
 					toastr.success("Row Deleted.");
 				},

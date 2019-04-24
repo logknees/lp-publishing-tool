@@ -6,7 +6,7 @@ $(document).ready(function(){
 				$('#deleteModal').modal('hide');
 			}
 			else if($('#editingButtons').is(":visible")){
-				searchSubmit();
+				searchSubmit(false);
 				closeEditing();
 			}
 			else if($('#confirmModal').is(":visible")){
