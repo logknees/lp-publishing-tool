@@ -1,5 +1,5 @@
 <script>
-function searchSubmit(){
+function searchSubmit(bypass){ //if they switch publishing coordinator, you should be able to bypass the 3 character rule
 	var order, direction;
 	$('th').each(function(){
 		if($(this).hasClass("sorted_asc")){
@@ -12,7 +12,7 @@ function searchSubmit(){
 		}
 	});
 	var total_chars = ($("#website").val().length) +  ($("#names").val().length) +  ($("#email").val().length) +  ($("#phone").val().length);
-		if(total_chars > 2){
+		if(total_chars > 2 || bypass == true){
 			$('.loader').toggle();
 			var website = $("#website").val();
 			//build js object from form values

@@ -9,12 +9,12 @@ $(document).ready(function(){
 
 		}
 		else{
-			searchSubmit();
+			searchSubmit(false);
 		}
 	});
 
 	$("#publishing_coordinator").on("change", function(){
-		searchSubmit();
+		searchSubmit(true);
 	});
 });
 
