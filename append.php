@@ -6,7 +6,7 @@
 		data.forEach(function(currentRow){
 			for (var key in currentRow){
 				if(key == "website_id"){
-					table += "<tr class='locked' id='website_id_"+currentRow[key]+"'>";
+					table += "<tr class='locked pc"+currentRow["publishing_coordinator"]+"' id='website_id_"+currentRow[key]+"'>";
 				}
 				else if(key =="active"){
 					

@@ -9,10 +9,11 @@
 <?php include "clearFooter.php"; ?>
 
 </head>
+
 <body>
 	<div id="currentlyEditing" value="false"></div>
 	<?php include "nav.php"; ?>
-	
+
 	<div id="results">
 		<table class="table" id="table_results">
 			<thead>
@@ -140,11 +141,9 @@
 </body>
 
 </html>
-
 <?php include "addBinding.php"; ?>
 <?php include "editBinding.php"; ?>
 <?php include "searchBinding.php"; ?>
 <?php include "orderBinding.php"; ?>
 <?php include "pasteBinding.php"; ?>
 <?php include "clearBinding.php"; ?>
-
