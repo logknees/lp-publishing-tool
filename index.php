@@ -33,7 +33,7 @@
 					<th scope="col" class="table_publishing_coordinator">Publishing Coordinator</th>
 				</tr>
 			</thead>
-			<tbody id="data test"></tbody>
+			<tbody id="data"></tbody>
 		</table>
 	</div>
 	<div class="loader"></div>
