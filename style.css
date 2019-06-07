@@ -35,7 +35,8 @@
 }
 
 #results{
-  padding-top: 65px;
+  padding-top: 63px;
+  overflow-y: auto; height: 100%;
 }
 
 @keyframes spin {
@@ -71,6 +72,7 @@ input[type="date"]{
 .table th{
   width: 8%;
   max-width: 8%;
+  background-color: #ffffff;
 }
 
 .editable{
@@ -84,6 +86,7 @@ input[type="date"]{
   right: 50;
   display: none;
 }
+
 
 .sorted_asc::after{
   content: " ▲";

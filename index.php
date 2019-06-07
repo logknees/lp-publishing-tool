@@ -17,7 +17,6 @@
 	<div id="results">
 		<table class="table" id="table_results">
 			<thead>
-				<tr>
 					<th scope="col" style="display: none" class="table_website_id"></th>
 					<th scope="col" class="table_website sorted_asc">Website</th>
 					<th scope="col" class="table_DA">DA</th>
@@ -31,7 +30,6 @@
 					<th scope="col" class="table_notes">Notes</th>
 					<th scope="col" class="table_is_signed">Signed?</th>
 					<th scope="col" class="table_publishing_coordinator">Publishing Coordinator</th>
-				</tr>
 			</thead>
 			<tbody id="data"></tbody>
 		</table>
@@ -141,6 +139,7 @@
 </body>
 
 </html>
+<?php include "scrollingThead.php"; ?>
 <?php include "addBinding.php"; ?>
 <?php include "editBinding.php"; ?>
 <?php include "searchBinding.php"; ?>
