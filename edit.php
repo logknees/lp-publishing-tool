@@ -22,9 +22,8 @@ foreach($JSON as $key => $value){
 		}
 	}
 	elseif($key == "last_poc"){
-
-		if($value == ''){
-			$values[] = null;
+		if($value == '0000-00-00'){
+			$values[] = '0000-01-01';
 		}
 		else{
 			$values[] = $value;

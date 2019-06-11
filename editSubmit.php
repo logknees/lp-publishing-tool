@@ -42,6 +42,7 @@
 			},
 			success: function(data)
 			{
+				console.log(data);
 			    searchSubmit(false);
 				closeEditing();
 				toastr.success("Editing successful.");

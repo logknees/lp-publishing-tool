@@ -19,11 +19,15 @@
 }
 
 .pc3{
-  background: rgb(255, 215, 142);
+  background: rgb(255, 82, 82);
 }
 
 .pc4{
   background: rgb(146, 255, 142);
+}
+
+.pc5{
+  background: rgb(255, 215, 155);
 }
 
 .fixed{
