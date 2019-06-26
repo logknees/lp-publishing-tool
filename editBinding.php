@@ -1,6 +1,6 @@
 <script>
 $(document).ready(function(){
-	var pc_array = ["N/A", "Emmy", "Mallory", "Morgan", "Zack", "Emily"];
+	var pc_array = ["N/A", "Emmy", "Mallory", "Morgan", "Zack", "Emily", "Kayla"];
 	$('body').on("dblclick", ".locked", function(){
 		if($('#currentlyEditing').val() == false){
 			$('#currentlyEditing').val(true);
@@ -27,7 +27,7 @@ $(document).ready(function(){
 				else if($(this).hasClass("pcEdit")){
 					var pc = $(this).data("value");
 					var string = "<select>";
-					for(var i = 0; i < 6; i++){
+					for(var i = 0; i < pc_array.length; i++){
 						if(pc == i){
 							string += "<option selected value='"+i+"'>"+pc_array[i]+"</option>";
 						}
