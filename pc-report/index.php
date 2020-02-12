@@ -1,5 +1,5 @@
-<? include "../header.php" ?>
-<? include "pc-report-bindings.php" ?>
+<?php include "../header.php" ?>
+<?php include "pc-report-bindings.php" ?>
 <h1>PC Report</h1>
 
 <div class="filters">
