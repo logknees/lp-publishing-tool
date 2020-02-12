@@ -1,7 +1,6 @@
 <?php include "connection.php"; ?>
 <html lang="en">
 
-<script src="https://rawgit.com/moment/moment/2.24.0/min/moment.min.js"></script>
 <?php include "header.php"; ?>
 
 <?php include "inputFilter.php"; ?>
