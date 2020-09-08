@@ -16,6 +16,10 @@ $(document).ready(function(){
 	$("#publishing_coordinator").on("change", function(){
 		searchSubmit(true);
 	});
+
+	$("#last_poc").on("change", function(){
+		searchSubmit(true);
+	});
 });
 
 </script>

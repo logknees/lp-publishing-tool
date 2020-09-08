@@ -1,5 +1,5 @@
 <script>
-function searchSubmit(bypass){ //if they switch publishing coordinator, you should be able to bypass the 3 character rule
+function searchSubmit(bypass){ //if they switch publishing coordinator or last POC, you should be able to bypass the 3 character rule 
 	var order, direction;
 	$('th').each(function(){
 		if($(this).hasClass("sorted_asc")){
@@ -16,7 +16,7 @@ function searchSubmit(bypass){ //if they switch publishing coordinator, you shou
 			$('.loader').toggle();
 			var website = $("#website").val();
 			//build js object from form values
-			var send_object = { website: $("#website").val(), names: $("#names").val(), email: $("#email").val(), phone: $("#phone").val(), pc: $("#publishing_coordinator").val(), order: order, direction: direction };
+			var send_object = { website: $("#website").val(), names: $("#names").val(), email: $("#email").val(), date: $('#last_poc').val(), phone: $("#phone").val(), pc: $("#publishing_coordinator").val(), order: order, direction: direction };
 			$.ajax({
 				type: "POST",
 				url: 'search.php',
