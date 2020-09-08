@@ -34,6 +34,14 @@
   background: rgb(255, 238, 0);
 }
 
+.pc7{
+  background: rgba(65, 109, 255, 0.788);
+}
+
+.pc8{
+  background: rgba(208, 255, 0, 0.74);
+}
+
 .fixed{
   position: fixed;
 }

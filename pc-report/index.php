@@ -12,6 +12,8 @@
             <option value="4">Zack</option>
             <option value="5">Emily</option>
             <option value="6">Kayla</option>
+            <option value="7">Christina</option>
+            <option value="8">Kate</option>
         </select>
     </div>
 

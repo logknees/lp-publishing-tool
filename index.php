@@ -59,7 +59,7 @@
 				<div class="col"><input type="text" class="form-control" name="email" id="email"></div>
 				<div class="col"><input type="text" class="form-control" name="phone" id="phone"></div>
 				<div class="col"><input type="text" class="form-control" name="site_status"></div>
-				<div class="col"><input type="date" class="form-control" name="last_poc"></div>
+				<div class="col"><input type="date" class="form-control" name="last_poc" id="last_poc"></div>
 				<div class="col">&nbsp;</div>
 				<div class="col"><input type="text" class="form-control" name="notes"></div>
 				<div class="col" style="display: none;"><input type="text" value="1" name="active"></div>
@@ -73,6 +73,8 @@
 						<option value="4">Zack</option>
 						<option value="5">Emily</option>
 						<option value="6">Kayla</option>
+						<option value="7">Christina</option>
+						<option value="8">Kate</option>
 					</select>
 				</div>
 			</div>
