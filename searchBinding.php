@@ -4,7 +4,7 @@
 <script>
 
 $(document).ready(function(){
-	$("#website, #names, #email, #phone").on("keyup", function(e){
+	$("#website, #names, #email, #phone").on("input", function(e){
 		if(e.which == 9 || e.which > 35 && e.which < 41 || e.which == 13){
 
 		}
