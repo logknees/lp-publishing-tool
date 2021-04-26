@@ -76,6 +76,7 @@
 						<option value="7">Christina</option>
 						<option value="8">Kate</option>
 						<option value="9">Abbey</option>
+						<option value="10">Shea</option>
 					</select>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 <script>
 $(document).ready(function(){
-	var pc_array = ["N/A", "Emmy", "Mallory", "Morgan", "Zack", "Emily", "Kayla", "Christina", "Kate", "Abbey"];
+	var pc_array = ["N/A", "Emmy", "Mallory", "Morgan", "Zack", "Emily", "Kayla", "Christina", "Kate", "Abbey", "Shea"];
 	$('body').on("dblclick", ".locked", function(){
 		if($('#currentlyEditing').val() == false){
 			$('#currentlyEditing').val(true);
